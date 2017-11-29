@@ -1,0 +1,261 @@
+body {
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border: none;
+}
+
+li {
+    float: right;
+}
+
+.inicio, .dropbtn {
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 26px 26px;
+    text-decoration: none;
+}
+
+.inicio:hover, .dropdown:hover .dropbtn {
+    background-color: #129AD6;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.fundo_img{
+    margin-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    float:left;
+    background-color: #363435;
+
+}
+
+.tudo {
+    position:absolute;
+    top: 80px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+#conexao{
+    float: left;
+    height: 95%;
+    width: 50%;
+
+}
+
+#noticias{
+    float: right;
+    height: 95%;
+    width: 50%;
+}
+
+.logar {
+    margin-left: 25%;
+    margin-top: 3%;
+    margin-right: 25%
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+    width: 100%;
+    background-color: #333;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+.logingeral {
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.inputbasico {
+    display: block;
+    height: 36px;
+    width: 100%;
+    border: none;
+    border-radius: 0 !important;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 300;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.15);
+}
+
+.inputbasico:focus {
+    border-bottom: 2px solid rgb(3, 169, 245);
+    outline: none;
+    box-shadow: none;
+}
+
+
+.aprendendolabel {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 18px;
+    color: #999;
+    font-weight: 300;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.inputbasico:focus ~ .aprendendolabel, .inputbasico:valid ~ .aprendendolabel {
+    top: -15px;
+    font-size: 15px;
+}
+
+.botoes {
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.botoes > div{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 45px;
+    border-radius: 3px;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+#cadastro{
+    background-color: #03A9F5;
+    padding: 14px 24px;
+    vertical-align: top;
+}
+
+#cadastro > a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#cadastro:hover, #botao >input:hover {
+    background-color: #02A2D5;
+    cursor: pointer;
+}
+
+#botao > input{
+    font-family: inherit;
+    font-weight: 100;
+    font-size: 17px;
+    border: 0;
+    background: rgb(3, 169, 245);
+    color: #fff;
+    height: 45px;
+    padding: 14px 24px;    
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.admin {
+    margin-left: 45%;
+    margin-top: 15%;
+    margin-right: 25%
+}
+
+h1.introducao { 
+    color: #03A9F5; 
+    font-size: 48px; 
+    font-family: 'Signika', sans-serif; 
+    margin-top: 20px; 
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+
+p.textoinicial { 
+    font-family: 'Inder', sans-serif; 
+    line-height: 28px;
+    margin-top: 0px;
+    margin-bottom: 15px; 
+    color: #666;
+    text-align: center;
+
+}
+
+.noticias {
+    margin-top: 0%;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+.followbutton{
+    float:right;
+    margin-right: 10%;
+}
+
+.containerfoto {
+    float:left;
+    width:250px;
+    height:200px;
+    margin: 10px;
+    padding:5px;
+    background-color:#f5f7f9;
+    border-right: #a5a7aa solid 1px;
+    border-bottom: #a5a7aa solid 1px;
+    text-align:center;
+}
+.imagem {
+    position: absolute;
+}
+
+.containerfoto:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+.geral{
+    margin-left: 25%;
+    margin-right: 25%;
+}
