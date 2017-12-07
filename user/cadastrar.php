@@ -82,7 +82,7 @@ if (isset($_SESSION['logadoadmin'])) {
             }
             ?>
             <?php
-            if ($_GET["erro"]) {
+            if (@$_GET["erro"]) {
                 echo '<p>Ocorreu um erro na inserção!!';
             }
             ?>

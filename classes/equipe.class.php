@@ -80,11 +80,7 @@ class equipe {
     function classificacao() {
         $query = 'SELECT tema, pntsTotal FROM equipe ORDER BY pntsTotal DESC';
         $result = $this->db->setResult($query);
-        while ($registro = mysqli_fetch_array($result)) {
-            $this->tema = $registro['tema'];
-            $this->pntsTotal = $registro['pntsTotal'];
-
-        }
+        return $result;
     }
     
 

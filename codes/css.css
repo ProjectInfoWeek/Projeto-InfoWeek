@@ -336,3 +336,112 @@ p.textoinicial {
     font-size: 15px;
     background-color: #129AD6;
 }
+
+#horarios{
+    position: absolute;
+    border-radius: 5px;
+    left: 25%;
+    top: 15%;
+    box-sizing: border-box;
+    border: solid black 5px;
+}
+
+#horarios > tbody > tr{
+    height: 50px;
+}
+
+#horarios > tbody > tr > th{
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    background-color: #129AD6;
+}
+
+#horarios > tbody > tr > td{
+    width: 200px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+}
+
+#equipes{
+    position: absolute;
+    border-radius: 5px;
+    left: 35%;
+    top: 25%;
+    box-sizing: border-box;
+    border: solid black 5px;
+}
+
+#equipes > tbody > tr{
+    height: 50px;
+}
+
+#equipes > tbody > tr > th{
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    background-color: #129AD6;
+}
+
+#equipes > tbody > tr > td{
+    width: 200px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+}
+
+#pesquisaEquipe{
+    position: relative;
+    left: 37vw;
+}
+
+#pesquisaEquipe > span{
+    font-size: 20px;
+}
+
+#pesquisaEquipe > select{
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+}
+
+#pesquisaEquipe > input{
+    height: 35px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: white;
+}
+
+#tituloClassificacao{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#classificacao{
+    position: absolute;
+    border-radius: 5px;
+    left: 35%;
+    top: 20%;
+    box-sizing: border-box;
+    border: solid black 5px;
+}
+
+#classificacao > tbody > tr{
+    height: 50px;
+}
+
+#classificacao > tbody > tr > th{
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    background-color: #129AD6;
+}
+
+#classificacao > tbody > tr > td{
+    width: 200px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+}

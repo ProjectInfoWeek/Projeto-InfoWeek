@@ -21,8 +21,8 @@ and open the template in the editor.
     <body>
         <form method="POST" action="verEquipes.php">
             <?php include_once '../codes/navbar.php'; ?>
-            Visualizar equipe: <select name="equipe">
-                <option value='' disabled selected>Selecione a equipe</option>
+            <div id="pesquisaEquipe"><span>Visualizar equipe: </span><select name="equipe">
+                    <option value='' disabled selected>Selecione a equipe</option>
             <?php
                 include '../classes/equipe.class.php';
                 $bd = new conexao;
@@ -34,9 +34,9 @@ and open the template in the editor.
                 }
                 echo "</select>"
             ?>
-                <input type="submit" name="Ver">
-            </select>
-            <table border='1'> 
+                    <input type="submit" name="Ver" value="Procurar">
+            </select></div>
+            <table cellpadding="0" cellspacing="0" id="equipes" border='1'> 
                      <tr>
                          <th>Nome</th>
                          <th>Turma</th>
@@ -44,20 +44,30 @@ and open the template in the editor.
                      
         <?php
         if(!isset($_POST["Ver"])){
-            $nome = $_SESSION["equipe"];
+            $nome = $_SESSION["name"];
             include_once '../classes/usuario.class.php';
             include_once '../classes/aluno.class.php';
             $aluno = new aluno;
             $aluno->setNome($nome);
             $idEquipe = $aluno->getIdEquipe();
             $result = $aluno->mostrarEquipes();
+            $i=1;
             while ($registro = mysqli_fetch_array($result)) {
                  $nome = $registro["nomeUsuario"];
                  $turma = $registro["turma"];
-                 echo "<tr>
-                            <td>$nome</td>
-                            <td>$turma</td>
+                 if($i%2==0){
+                     echo "<tr>
+                            <td style='background-color: white;'>$nome</td>
+                            <td style='background-color: white;'>$turma</td>
                        </tr>";
+                 }
+                 else{
+                     echo "<tr>
+                            <td style='background-color: #e8e8e8;'>$nome</td>
+                            <td style='background-color: #e8e8e8;'>$turma</td>
+                       </tr>";
+                 }
+                 $i++;
              }
         } else {
             include_once '../classes/usuario.class.php';
